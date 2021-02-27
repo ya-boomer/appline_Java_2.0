@@ -15,19 +15,24 @@ public class The_Calc {
         double y = scanner.nextDouble();
         System.out.print("введите арифметическое действие: ");
         String z = scanner.next();
+        double result;
         //calc
         switch (z) {
             case "+":
-                System.out.print(x + y);
+                result = x + y;
+                System.out.printf("%.4f", result);
                 break;
             case "-":
-                System.out.print(x - y);
+                result = x - y;
+                System.out.printf("%.4f", result);
                 break;
             case "*":
-                System.out.print(x * y);
+                result = x * y;
+                System.out.printf("%.4f", result);
                 break;
             case "/":
-                System.out.print(x / y);
+                result = x / y;
+                System.out.printf("%.4f", result);
                 break;
             //incorrect arithmetic operation
             default:

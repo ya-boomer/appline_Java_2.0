@@ -14,10 +14,12 @@ public class The_Calc {
     public static void main(String[] args) {
         System.out.print("введите что Вы хотите сделать:\n 1 - посчитать в калькуляторе\n 2 - найти максимальный элемент массива ");
         Scanner scanner = new Scanner(System.in);
+        // read operation number
         byte a = scanner.nextByte();
         if (a == 1) {
             Calculate();
         } else if (a == 2) {
+            // read length of array
             System.out.println("Введите количество элементов массива");
             int lengthArray = scanner.nextInt();
             maxArrayElement(lengthArray);
@@ -60,14 +62,17 @@ public class The_Calc {
         int max, j = 0;
         String[] myArray = new String[lengthArray];
         for (int i = 0; i < lengthArray; i++) {
+            // write elements of array
             Scanner scanner = new Scanner(System.in);
             System.out.println("Введите элемент массива");
             myArray[i] = scanner.nextLine();
         }
         for (int i = 0; i < lengthArray; i++) {
             max = myArray[0].length();
+            // find max length of elements array
             if (myArray[i].length() > max)
                 max = myArray[i].length();
+            // remember the number of the maximum array element
             j = i;
 
         }
